@@ -5,6 +5,13 @@ body{
 .paddings{
     padding: 0px 50px;
 }
+.brand-logo img{
+    margin-top: 5px;
+}
+.tech{
+    width: 100px;
+    height: auto;
+}
 @media screen and (max-width: 900px){
     .paddings{
         padding: 0px 20px;
