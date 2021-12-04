@@ -1,0 +1,12 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background: #E5E5E5;
+}
+.paddings{
+    padding: 0px 50px;
+}
+@media screen and (max-width: 900px){
+    .paddings{
+        padding: 0px 20px;
+    }
+}
