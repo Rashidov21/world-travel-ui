@@ -1,8 +1,10 @@
 M.AutoInit();
-let tech = document.querySelectorAll(".tech");
-for(let i = 0; i < tech.length; i++){
-    tech[i].style.width = `${Math.round(50 - Math.random() * 150)}px`;
-    tech[i].style.top = `${Math.round(Math.random() * 500)}px`;
-    tech[i].style.left = `${Math.round(Math.random() * 500)}px`;
-    tech[i].style.transition = `all 0.5s`;
-}
+var elems = document.querySelectorAll('.carousel');
+var instances = M.Carousel.init(elems, {
+    duration:400,
+    fullWidth:true,
+    indicators:true,
+    noWrap:false,
+    dist:-500,
+    shift:200
+});

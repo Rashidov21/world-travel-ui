@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
 body{
-    font-family: "Poppins", sans-serif;
-    background: #E5E5E5;
+    font-family: 'Ubuntu Mono', monospace;
+    /*background: #E5E5E5;*/
+}
+h1,h2,h3,h4{
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-weight: 700 !important;
+}
+nav{
+    /*z-index: 999;*/
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    margin:10px 10px ;
 }
 .paddings{
     padding: 0px 50px;
@@ -12,11 +28,22 @@ body{
 .bg-python{
     background-color: #FFD745;
 }
+.edu-color1{
+    background-color: #0CBA68;
+}
+.edu-color2{
+    background-color:#3771A1;
+}
+.edu-color3{
+    background-color: #B6FF9E;
+}
 .py-blue{
 color: #3475A8;
 }
 .title{
-    font-family: "Poppins", sans-serif;
+    font-size: 40px !important;
+    color: #FFD745;
+    line-height: 40px;
 }
 .py-orange{
     color: #FFD745;
@@ -24,18 +51,24 @@ color: #3475A8;
 .bg-python-blue{
     background-color: #3475A8;
 }
-.right-area{
-    background-color: #3475A8;
-    width: 100%;
-    height: 700px;
-    position: absolute;
-    top: 0;
-    clip-path: polygon(77% 0, 100% 0, 100% 100%, 42% 100%);
+.bg-python-orange{
+    background-color: #FFD745;
 }
+.btn{
+    border-radius: 20px;
+}
+
 #pyblog-banner{
     width: 100%;
-    height: 700px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top:-20px;
+    z-index: -1;
+
 }
+
 .brand-logo img{
     margin-top: 5px;
 }
