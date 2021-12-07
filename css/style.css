@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
-
+*{
+    transition: all 0.3s ease-in-out;
+}
 body{
-    font-family: 'Ubuntu Mono', monospace;
+    /*font-family: 'Ubuntu Mono', monospace;*/
     /*background: #E5E5E5;*/
+
 }
 h1,h2,h3,h4{
     font-family: 'Ubuntu Mono', monospace !important;
@@ -11,9 +14,14 @@ h1,h2,h3,h4{
 nav{
     /*z-index: 999;*/
 }
+
 .social-icons{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.social-icons a{
+    cursor: pointer;
 }
 .social-icons a{
     margin:10px 10px ;
@@ -37,6 +45,9 @@ nav{
 .edu-color3{
     background-color: #B6FF9E;
 }
+.scale:hover{
+    transform: scale(1.2);
+}
 .py-blue{
 color: #3475A8;
 }
@@ -54,9 +65,6 @@ color: #3475A8;
 .bg-python-orange{
     background-color: #FFD745;
 }
-.btn{
-    border-radius: 20px;
-}
 
 #pyblog-banner{
     width: 100%;
@@ -64,8 +72,7 @@ color: #3475A8;
     display: flex;
     align-items: center;
     position: absolute;
-    margin-top:-20px;
-    z-index: -1;
+    margin-top:1px;
 
 }
 
@@ -84,4 +91,43 @@ color: #3475A8;
         margin-left: 20px;
         margin-right: 20px;
     }
+}
+.badges{
+    display: flex;
+
+}
+.badges a{
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: white;
+    background-color: #3475A8;
+}
+
+#fb-share-button {
+    background: #3773A6;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 3.3px 8px;
+    display: inline-block;
+    position: static;
+    margin-right: 10px;
+}
+
+#fb-share-button:hover {
+    cursor: pointer;
+    background: #213A6F
+}
+
+#fb-share-button svg {
+    width: 18px;
+    fill: white;
+    vertical-align: middle;
+    border-radius: 2px
+}
+
+#fb-share-button span {
+    vertical-align: middle;
+    color: white;
+    font-size: 14px;
+    padding: 0 3px
 }
