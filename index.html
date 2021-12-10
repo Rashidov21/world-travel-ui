@@ -7,132 +7,107 @@
     <meta name="author" content="Abdurakhmon Rashidov">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>PyBlog - Python va dasturlash blogi</title>
 
 </head>
 <body>
+<nav class="navbar bg-python-orange" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+            <img src="img/pyblog-logo.svg" width="200">
+        </a>
 
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
 
-        <nav class="bg-python-orange paddings z-depth-3">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">
-                    <img src="img/pyblog-logo.svg" width="150" alt="">
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Home
+            </a>
+
+            <a class="navbar-item">
+                Documentation
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
                 </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger ">
-                    <i class="fas fa-bars py-blue"></i></a>
-                <ul class="right hide-on-med-and-down ">
-                    <li><a href="#" title="Bosh sahifa"><i class="fas fa-home py-blue"></i></a></li>
-                    <li><a href="#" title="Telegram kanalimiz"><i class="fas fa-paper-plane py-blue"></i></a></li>
-                    <li><a href="#" title="Facebook sahifamiz"><i class="fab fa-facebook py-blue"></i></a></li>
-                    <li><a href="#" title="Instagram sahifamiz"><i class="fab fa-instagram py-blue"></i></a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#" title="Bosh sahifa"><i class="fas fa-home "></i>Bosh sahifa</a></li>
-            <li><a href="#" title="Telegram kanalimiz"><i class="fas fa-paper-plane"></i> Telegram kanalimiz</a></li>
-            <li><a href="#" title="Facebook sahifamiz"><i class="fab fa-facebook"></i> Facebook sahifamiz</a></li>
-            <li><a href="#" title="Instagram sahifamiz"><i class="fab fa-instagram"></i> Instagram sahifamiz</a></li>
-            <li><a href="tel:9998989" title="Telefon"><i class="fas fa-phone"></i> +998901234567</a></li>
-            <li><a href="#" title="Email pochtamiz"><i class="fas fa-envelope"></i> support@pyblog.uz</a></li>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+<div class="mobile-nav has-background-warning p-5" id="mobile-nav" >
+    <aside class="menu">
+        <p class="menu-label">
+            Sahifalar
+            <button id="close" class="button is-link is-light" style="float: right">
+                <i class="fas fa-times is-size-5"></i>
+            </button>
+        </p>
+        <ul class="menu-list">
+            <li><a>Bosh sahifa</a></li>
+            <li><a>Biz haqimizda</a></li>
+            <li><a>Aloqa</a></li>
         </ul>
+        <p class="menu-label">
+            Bo'limlar
+        </p>
+        <ul class="menu-list">
+            <li><a>Python</a></li>
+            <li><a>Invitations</a></li>
+            <li><a>Cloud Storage Environment Settings</a></li>
+            <li><a>Authentication</a></li>
+        </ul>
+        <p class="menu-label">
+            Turkumlar
+        </p>
+        <ul class="menu-list">
+            <li><a>Payments</a></li>
+            <li><a>Transfers</a></li>
+            <li><a>Balance</a></li>
+        </ul>
+    </aside>
+</div>
 
-
-<main id="pyblog-banner" class="z-depth-3" style="background: #3475A8">
-    <div class="container">
-        <div class="row center">
-            <div class="col s12 m6">
-                <h2 class="title">Pythonda yozadiganlar uchun hayotini  osonlashtiruvchi maslahatlar</h2>
-                <br><br>
-                <div class="social-icons">
-                    <a class="btn waves-effect waves-light bg-python-orange scale">
-                        <i class="fab fa-telegram"></i>
-                        Telegram
-                    </a>
-                    <a class="btn waves-effect waves-light bg-python-orange scale">
-                        <i class="fab fa-instagram"></i>
-                        Instagram
-                    </a>
-                    <a class="btn waves-effect waves-light bg-python-orange scale">
-                        <i class="fab fa-facebook"></i>
-                        Facebook
-                    </a>
-                </div>
-
-            </div>
-            <div class="col s12 m6 center ">
-                <br>
-                <p class="py-blue">
-                    <img src="img/I.png" class="hide-on-small-only"   alt="">
-                </p>
-            </div>
-        </div>
-    </div>
-</main>
-        <br>
-<section class="main-container" style="margin-top: 500px">
-    <div class="card-panel z-depth-3">
-        <div class="card-panel">
-            <div class="row">
-                <div class="col s12 m2">
-                    <h4 class="py-blue left">Blog</h4>
-                </div>
-                <div class="col s12 m10">
-                    <div class="badges">
-                        <a href="#!">Python</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col s12 m6 l6">
-                <div class="card-panel z-depth-3">
-                    <div class="card-image">
-                        <a href="#!"><img src="img/post.png" width="100%" height="auto"></a>
-                        <h5 class="card-title">Python is better programming language in the world
-                            <a href="#!" class="right scale">
-                                <i class="fas fa-thumbtack py-orange" style="font-size: 1em"></i>
-                            </a>
-                        </h5>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="btn waves-effect waves-light bg-python-orange scale">
-                            Batafsil
-                        </a>
-
-                        <a href="#!" class="right">
-                            <script async src="https://telegram.org/js/telegram-widget.js?15"
-                                    data-telegram-share-url="https://core.telegram.org/widgets/share"
-                                    data-size="large"></script>
-                        </a>
-                        <a href="#!" class="right">
-                            <div id="fb-share-button">
-                                <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
-                                    <path class="svg-icon-path" d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z"></path>
-                                </svg>
-                                <span>Share</span>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l6"></div>
-        </div>
-    </div>
-
-
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script  src="js/core.js"></script>
 </body>
 </html>

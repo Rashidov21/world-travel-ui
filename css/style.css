@@ -15,11 +15,7 @@ nav{
     /*z-index: 999;*/
 }
 
-.social-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .social-icons a{
     cursor: pointer;
 }
@@ -51,11 +47,7 @@ nav{
 .py-blue{
 color: #3475A8;
 }
-.title{
-    font-size: 40px !important;
-    color: #FFD745;
-    line-height: 40px;
-}
+
 .py-orange{
     color: #FFD745;
 }
@@ -65,69 +57,18 @@ color: #3475A8;
 .bg-python-orange{
     background-color: #FFD745;
 }
-
-#pyblog-banner{
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin-top:1px;
-
+.toDown{
+    /*position: absolute;*/
+    animation: upToDown 500s linear ;
 }
-
-.brand-logo img{
-    margin-top: 5px;
-}
-.tech{
-    width: 100px;
-    height: auto;
-}
-@media screen and (max-width: 900px){
-    .paddings{
-        padding: 0px 20px;
+@keyframes upToDown {
+    from{
+        transform: translateY(-200px);
     }
-    .main-container{
-        margin-left: 20px;
-        margin-right: 20px;
+    to{
+        transform: translateY(0);
     }
 }
-.badges{
-    display: flex;
 
-}
-.badges a{
-    padding: 4px 8px;
-    border-radius: 10px;
-    color: white;
-    background-color: #3475A8;
-}
 
-#fb-share-button {
-    background: #3773A6;
-    border-radius: 3px;
-    font-weight: 600;
-    padding: 3.3px 8px;
-    display: inline-block;
-    position: static;
-    margin-right: 10px;
-}
 
-#fb-share-button:hover {
-    cursor: pointer;
-    background: #213A6F
-}
-
-#fb-share-button svg {
-    width: 18px;
-    fill: white;
-    vertical-align: middle;
-    border-radius: 2px
-}
-
-#fb-share-button span {
-    vertical-align: middle;
-    color: white;
-    font-size: 14px;
-    padding: 0 3px
-}
