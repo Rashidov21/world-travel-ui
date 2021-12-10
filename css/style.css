@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 *{
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.3s ease-in-out;*/
 }
 body{
     /*font-family: 'Ubuntu Mono', monospace;*/
@@ -57,9 +57,21 @@ color: #3475A8;
 .bg-python-orange{
     background-color: #FFD745;
 }
+.mobile-nav{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-600px);
+}
+
+/*@media screen and (max-width: 1000px){*/
+/*    .mobile-nav{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
 .toDown{
+    transform: translateY(0px);
     /*position: absolute;*/
-    animation: upToDown 500s linear ;
+    /*animation: upToDown 500s linear ;*/
 }
 @keyframes upToDown {
     from{
