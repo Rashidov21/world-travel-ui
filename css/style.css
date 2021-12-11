@@ -84,6 +84,9 @@ color: #3475A8;
         transform: translateY(0);
     }
 }
+.star{
+
+}
 #about{
     background-image: url("../img/mount.png");
     background-repeat: no-repeat;
