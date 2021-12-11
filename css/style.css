@@ -2,6 +2,9 @@
 *{
     /*transition: all 0.3s ease-in-out;*/
 }
+html{
+    overflow-x: hidden;
+}
 body{
     /*font-family: 'Ubuntu Mono', monospace;*/
     /*background: #E5E5E5;*/
@@ -81,6 +84,13 @@ color: #3475A8;
         transform: translateY(0);
     }
 }
+#about{
+    background-image: url("../img/mount.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 500px;
+}
+
 
 
 

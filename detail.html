@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Abdurakhmon Rashidov">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>PyBlog - Python va dasturlash blogi</title>
+
+</head>
+<body>
+<nav class="navbar bg-python-orange pl-5 pr-5" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/" >
+            <img src="img/logo.png" class="w-100">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu bg-python-orange">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Home
+            </a>
+
+            <a class="navbar-item">
+                Documentation
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<section class="hero bg-python-blue p-5">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li>
+                <a href="#" class="has-text-white">
+                    <span class="icon is-small">
+                      <i class="fas fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span>Bosh sahifa</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="has-text-white">
+                    <span class="icon is-small">
+                      <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    <span>Documentation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="has-text-white">
+                    <span class="icon is-small">
+                      <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                    </span>
+                    <span>Components</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</section>
+<section class="section">
+    <div class="container mt-5">
+        <div class="columns">
+            <div class="column is-9">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="title is-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, totam.
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam, architecto atque aut cupiditate, deleniti earum enim eveniet fugiat illum ipsam maxime, quidem rem sit? Aliquid dignissimos ducimus numquam.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                              <span>
+                                <a href="#">
+                                    <i class="fab fa-facebook is-size-4"></i>
+                                </a>
+                                  da ulashish
+                              </span>
+                            </p>
+                            <p class="card-footer-item">
+                              <span>
+                               <a href="#">
+                                    <i class="fab fa-telegram is-size-4"></i>
+                                </a>
+                                  da o'qish
+                              </span>
+                            </p>
+                            <p class="card-footer-item">
+                               <span>
+                                   +89
+                                    <a href="#">
+                                    <i class="fas fa-heart is-size-4"></i>
+                                </a>
+                               </span>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+<!--                Comments area-->
+                <div class="card p-5 mt-5 mb-3">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+
+                                <div class="level-left">
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            +89
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-arrow-up"></i>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="media-right">
+                            <a href="#" title="Fikrga qo'shilaman, uni tepaga ko'taring.">
+                                <i class="fas fa-arrow-alt-circle-up is-size-3"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="column is-3">
+                <nav class="panel">
+                    <p class="panel-heading">
+                        Repositories
+                    </p>
+                    <div class="panel-block">
+                        <p class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Search">
+                            <span class="icon is-left">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </span>
+                        </p>
+                    </div>
+                    <p class="panel-tabs">
+                        <a class="is-active">All</a>
+                        <a>Public</a>
+                        <a>Private</a>
+                        <a>Sources</a>
+                        <a>Forks</a>
+                    </p>
+                    <a class="panel-block is-active">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+                        bulma
+                    </a>
+                    <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+                        marksheet
+                    </a>
+                    <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+                        minireset.css
+                    </a>
+                    <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+                        jgthms.github.io
+                    </a>
+                    <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-code-branch" aria-hidden="true"></i>
+    </span>
+                        daniellowtw/infboard
+                    </a>
+                    <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-code-branch" aria-hidden="true"></i>
+    </span>
+                        mojs
+                    </a>
+                    <label class="panel-block">
+                        <input type="checkbox">
+                        remember me
+                    </label>
+                    <div class="panel-block">
+                        <button class="button is-link is-outlined is-fullwidth">
+                            Reset all filters
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section class="section bg-python-orange">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="card p-5">
+                    <div class="title is-size-4">
+                        Maqola agar foydali bo'lgan bo'lsa u haqida fikrlaringizni qoldiring.
+                    </div>
+                    <form action="" method="post">
+                        <div class="field">
+                            <label class="label">Ism-familya</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                                <span class="icon is-small is-left">
+                                  <i class="fas fa-envelope"></i>
+                                </span>
+                                                            <span class="icon is-small is-right">
+                                  <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This email is invalid</p>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="title is-size-4 is-centered">
+                    Fikr bildirishdagi tartib va qoidalar.
+                </div>
+                <div class="notification is-info">
+                    <button class="delete"></button>
+                    Primar lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                </div>
+                <div class="notification is-success">
+                    <button class="delete"></button>
+                    Primar lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                </div>
+                <div class="notification is-danger">
+                    <button class="delete"></button>
+                    Primar lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="js/core.js"></script>
+</body>
+</html>
