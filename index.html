@@ -7,12 +7,14 @@
     <meta content="keywords" content="travel , sayohat, andijon, uzbekistan">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css" integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
 </head>
 
 <body>
-    <header>
+    <header id="banner">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,22 +47,76 @@
     </header>
     <main>
         <section>
-            <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-                <h1 class="display-5 fw-bold">Centered hero</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful
-                        JavaScript plugins.</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="px-4 py-5 my-5 text-center">
+                            <br>
+                            <br>
+                            <!-- <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                            <h1 class="display-5 fw-bold text-white">Centered hero 1</h1>
+                            <div class="col-lg-6 mx-auto">
+                                <p class="lead mb-4 text-white fw-semibold">
+                                    O'zbekistonning boqiy shaharlariga sayohat
+                                </p>
+                                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="px-4 py-5 my-5 text-center">
+                            <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                            <h1 class="display-5 fw-bold">Centered hero 2</h1>
+                            <div class="col-lg-6 mx-auto">
+                                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components,
+                                    and powerful JavaScript plugins.</p>
+                                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="px-4 py-5 my-5 text-center">
+                            <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                            <h1 class="display-5 fw-bold">Centered hero 3</h1>
+                            <div class="col-lg-6 mx-auto">
+                                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components,
+                                    and powerful JavaScript plugins.</p>
+                                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
+
+
         </section>
+
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
