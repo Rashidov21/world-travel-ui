@@ -1,9 +1,9 @@
 * {
-    font-family: "";
+    font-family: 'Poppins', sans-serif;
 }
 
 #banner {
-    background-image: url(../src/1920x1000.jpg) !important;
+    background-image: url(../src/1920X992.jpg) !important;
     background-position: center;
     background-size: cover;
 }
